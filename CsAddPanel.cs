@@ -3,6 +3,7 @@ using System.Reflection;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using System.Windows.Media.Imaging;
+using System.Collections.Generic;
 
 namespace Walkthrough
 {
@@ -33,7 +34,24 @@ namespace Walkthrough
          BitmapImage largeImage = new BitmapImage(uriImage);
          pushButton.LargeImage = largeImage;
 
-         return Result.Succeeded;
+            // OPTION 2 - CREATE BUTTON DIRECTLY ON REVIT RIBBON TAB
+
+            // Create a custom ribbon tab
+            String tabName = "This Tab Name";
+            application.CreateRibbonTab(tabName);
+
+            // Create two push buttons
+            PushButtonData button1 = new PushButtonData("Button1", "My Button #1", thisAssemblyPath, "Walkthrough.HelloWorld");
+            PushButtonData button2 = new PushButtonData("Button2", "My Button #2", thisAssemblyPath, "Walkthrough.HelloWorld");
+
+            // Create a ribbon panel
+            RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "This Panel Name");
+
+            // Add the buttons to the panel
+            List<RibbonItem> projectButtons = new List<RibbonItem>();
+            projectButtons.AddRange(m_projectPanel.AddStackedItems(button1, button2));
+
+            return Result.Succeeded;
       }
 
       public Result OnShutdown(UIControlledApplication application)
