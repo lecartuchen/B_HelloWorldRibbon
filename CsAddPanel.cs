@@ -37,15 +37,15 @@ namespace Walkthrough
             // OPTION 2 - CREATE BUTTON DIRECTLY ON REVIT RIBBON TAB
 
             // Create a custom ribbon tab
-            String tabName = "HAZEN";
+            String tabName = "Hazen";
             application.CreateRibbonTab(tabName);
 
             // Create a ribbon panel
-            RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "HAZEN TOOLS");
+            RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "Hazen Tools");
 
             // Create two push buttons
-            PushButtonData button1 = new PushButtonData("newProjBtn", "NEW PROJECT", thisAssemblyPath, "Walkthrough.HelloWorld");
-            PushButtonData button2 = new PushButtonData("newShtBtn", "NEW SHEET", thisAssemblyPath, "Walkthrough.HelloWorld");
+            PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "Walkthrough.HelloWorld");
+            PushButtonData button2 = new PushButtonData("newShtBtn", "New Sheet", thisAssemblyPath, "B_HelloWorld_RibbonPanel.NewSheet_Cmd");
 
             PushButton pushButton1 = m_projectPanel.AddItem(button1) as PushButton;
             PushButton pushButton2 = m_projectPanel.AddItem(button2) as PushButton;
@@ -60,10 +60,10 @@ namespace Walkthrough
             pushButton2.ToolTip = "Create a new sheet by collecting data from the user. Once you have filled out the form, a new populated sheet will automatically be created";
 
             // b) large bitmap
-            // Uri uriImage2 = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\HazenIcon96x96.png");
-            // BitmapImage largeImage = new BitmapImage(uriImage);
+            Uri uriImage2 = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\NewSheetIcon96x96.png");
+            BitmapImage largeImage2 = new BitmapImage(uriImage2);
             pushButton1.LargeImage = largeImage;
-            pushButton2.LargeImage = largeImage;
+            pushButton2.LargeImage = largeImage2;
 
             return Result.Succeeded;
       }
