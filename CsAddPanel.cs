@@ -31,25 +31,39 @@ namespace Walkthrough
 
             // b) large bitmap
             Uri uriImage = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\HazenIcon96x96.png");
-         BitmapImage largeImage = new BitmapImage(uriImage);
-         pushButton.LargeImage = largeImage;
+            BitmapImage largeImage = new BitmapImage(uriImage);
+            pushButton.LargeImage = largeImage;
 
             // OPTION 2 - CREATE BUTTON DIRECTLY ON REVIT RIBBON TAB
 
             // Create a custom ribbon tab
-            String tabName = "This Tab Name";
+            String tabName = "HAZEN";
             application.CreateRibbonTab(tabName);
 
-            // Create two push buttons
-            PushButtonData button1 = new PushButtonData("Button1", "My Button #1", thisAssemblyPath, "Walkthrough.HelloWorld");
-            PushButtonData button2 = new PushButtonData("Button2", "My Button #2", thisAssemblyPath, "Walkthrough.HelloWorld");
-
             // Create a ribbon panel
-            RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "This Panel Name");
+            RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "HAZEN TOOLS");
+
+            // Create two push buttons
+            PushButtonData button1 = new PushButtonData("newProjBtn", "NEW PROJECT", thisAssemblyPath, "Walkthrough.HelloWorld");
+            PushButtonData button2 = new PushButtonData("newShtBtn", "NEW SHEET", thisAssemblyPath, "Walkthrough.HelloWorld");
+
+            PushButton pushButton1 = m_projectPanel.AddItem(button1) as PushButton;
+            PushButton pushButton2 = m_projectPanel.AddItem(button2) as PushButton;
 
             // Add the buttons to the panel
-            List<RibbonItem> projectButtons = new List<RibbonItem>();
-            projectButtons.AddRange(m_projectPanel.AddStackedItems(button1, button2));
+            // List<RibbonItem> projectButtons = new List<RibbonItem>();
+            // projectButtons.AddRange(m_projectPanel.AddStackedItems(button1, button2));
+
+            // Optionally, other properties may be assigned to the button
+            // a) tool-tip
+            pushButton1.ToolTip = "Start a new project by collecting data from the user. Once you have filled out the form, a new 3D model will automatically be created";
+            pushButton2.ToolTip = "Create a new sheet by collecting data from the user. Once you have filled out the form, a new populated sheet will automatically be created";
+
+            // b) large bitmap
+            // Uri uriImage2 = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\HazenIcon96x96.png");
+            // BitmapImage largeImage = new BitmapImage(uriImage);
+            pushButton1.LargeImage = largeImage;
+            pushButton2.LargeImage = largeImage;
 
             return Result.Succeeded;
       }
