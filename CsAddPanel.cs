@@ -30,7 +30,7 @@ namespace Walkthrough
             pushButton.ToolTip = "Start a new project by collecting data from the user. Once you have filled out the form, a new 3D model will automatically be created";
 
             // b) large bitmap
-            Uri uriImage = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\HazenIcon96x96.png");
+            Uri uriImage = new Uri(@"D:\00_Projects\Revit\Revit API\Walkthroughs\B_HelloWorld\img\HazenIcon96x96.png");
          BitmapImage largeImage = new BitmapImage(uriImage);
          pushButton.LargeImage = largeImage;
 
