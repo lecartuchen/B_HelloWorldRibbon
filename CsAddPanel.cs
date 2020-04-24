@@ -44,8 +44,8 @@ namespace Walkthrough
             RibbonPanel m_projectPanel = application.CreateRibbonPanel(tabName, "Hazen Tools");
 
             // Create two push buttons
-            PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "Walkthrough.HelloWorld");
-            PushButtonData button2 = new PushButtonData("newShtBtn", "New Sheet", thisAssemblyPath, "B_HelloWorld_RibbonPanel.NewSheet_Cmd");
+            PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "NEWPROJ_CMD.NewProj_Cmd");
+            PushButtonData button2 = new PushButtonData("newShtBtn", "New Sheet", thisAssemblyPath, "NEWSHEET_CMD.NewSheet_Cmd");
 
             PushButton pushButton1 = m_projectPanel.AddItem(button1) as PushButton;
             PushButton pushButton2 = m_projectPanel.AddItem(button2) as PushButton;
