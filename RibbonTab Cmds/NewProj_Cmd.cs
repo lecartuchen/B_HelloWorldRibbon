@@ -1,5 +1,6 @@
 ﻿using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using B_HelloWorld_RibbonPanel.Forms;
 
 
 namespace NEWPROJ_CMD
@@ -15,8 +16,11 @@ namespace NEWPROJ_CMD
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData revit,
             ref string message, ElementSet elements)
         {
-            TaskDialog.Show("Hazen", "Here goes my FIRST Hazen Form");
-            return Autodesk.Revit.UI.Result.Succeeded;
+             TaskDialog.Show("Hazen", "Here goes my FIRST Hazen Form");
+            NewProjForm FirstForm = new NewProjForm();
+            NewProjForm.doc = uidoc.Document;
+            FirstForm.Show();
+             return Autodesk.Revit.UI.Result.Succeeded;  
         }
     }
 }

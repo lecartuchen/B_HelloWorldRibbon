@@ -2,22 +2,68 @@
 {
     using System;
     using System.Windows.Forms;
-
-    /// <summary>
+    using Autodesk.Revit.UI;
     /// New Project Data acquisition form.
     /// </summary>
 
     public partial class NewProjForm : Form
     {
-        #region Constructor
+        /// <summary>
+        /// The private reference to the <see cref="UIDocument"/>.
+        /// </summary>
+        #region Private Members
+        private UIDocument uidoc = null;
+        #endregion
 
-        public NewProjForm()
+        #region Constructor
+        /// <summary>
+        /// Default Constructor.
+        /// Initializes a new instance of the <see cref="NewProjForm"/> class.
+        /// </summary>
+        /// <param name="uIDocument"></param>
+        public NewProjForm(UIDocument uIDocument)
         {
-            // 04 - Revit API - Plugin Essentials - Show Dialog Box and create SketchPlane 6:47
+            uidoc = uIDocument;
+        }
+        #endregion
+
+        #region Events
+        /// <summary>
+        /// Handles the Load event of the NewProjForm control.
+        /// </summary>
+        /// <param name="sender">The source of the event</param>
+        /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
+        private void NewProjForm_Load(object sender, EventArgs e)
+        {
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the button OK control.
+        /// </summary>
+        /// <param name="sender">The source of the event</param>
+        /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            Close();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the button Cancel control.
+        /// </summary>
+        /// <param name="sender">The source of the event</param>
+        /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            Close();
+        }
+        #endregion 
+
+        #region public methods
 
         #endregion
     }
 }
+// 04 - Revit API - Plugin Essentials - Show Dialog Box and create SketchPlane 6:47
