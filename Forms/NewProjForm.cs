@@ -12,7 +12,9 @@
         /// The private reference to the <see cref="UIDocument"/>.
         /// </summary>
         #region Private Members
-        private UIDocument uidoc = null;
+        public UIDocument uidoc = null;
+
+        public static object doc { get; internal set; }
         #endregion
 
         #region Constructor
@@ -24,6 +26,10 @@
         public NewProjForm(UIDocument uIDocument)
         {
             uidoc = uIDocument;
+        }
+
+        public NewProjForm()
+        {
         }
         #endregion
 
