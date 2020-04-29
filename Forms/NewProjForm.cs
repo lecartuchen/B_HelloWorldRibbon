@@ -8,13 +8,13 @@
 
     public partial class NewProjForm : Form
     {
+        private UIDocument uidoc;
+
         /// <summary>
         /// The private reference to the <see cref="UIDocument"/>.
         /// </summary>
         #region Private Members
-        public UIDocument uidoc = null;
-
-        public static object doc { get; internal set; }
+        public static object Doc { get; internal set; }
         #endregion
 
         #region Constructor
@@ -25,12 +25,9 @@
         /// <param name="uIDocument"></param>
         public NewProjForm(UIDocument uIDocument)
         {
-            uidoc = uIDocument;
+           uidoc = uIDocument;
         }
 
-        public NewProjForm()
-        {
-        }
         #endregion
 
         #region Events
@@ -49,7 +46,7 @@
         /// </summary>
         /// <param name="sender">The source of the event</param>
         /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
-        private void btnOk_Click(object sender, EventArgs e)
+        private void BtnOk_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             Close();
@@ -60,7 +57,7 @@
         /// </summary>
         /// <param name="sender">The source of the event</param>
         /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             Close();

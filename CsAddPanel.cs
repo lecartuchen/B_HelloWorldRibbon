@@ -30,7 +30,7 @@ namespace Walkthrough
             pushButton.ToolTip = "Start a new project by collecting data from the user. Once you have filled out the form, a new 3D model will automatically be created";
 
             // b) large bitmap
-            Uri uriImage = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\HazenIcon96x96.png");
+            Uri uriImage = new Uri(@"C:\Users\LESTER\source\repos\lecartuchen\B_HelloWorldRibbon\img\HazenIcon96x96.png");
             BitmapImage largeImage = new BitmapImage(uriImage);
             pushButton.LargeImage = largeImage;
 
@@ -60,7 +60,7 @@ namespace Walkthrough
             pushButton2.ToolTip = "Create a new sheet by collecting data from the user. Once you have filled out the form, a new populated sheet will automatically be created";
 
             // b) large bitmap
-            Uri uriImage2 = new Uri(@"C:\00_Lester's Stuff\Revit Docs\API\RevitAPI_Learning\B_HelloWorldRibbon\img\NewSheetIcon96x96.png");
+            Uri uriImage2 = new Uri(@"C:\Users\LESTER\source\repos\lecartuchen\B_HelloWorldRibbon\img\NewSheetIcon96x96.png");
             BitmapImage largeImage2 = new BitmapImage(uriImage2);
             pushButton1.LargeImage = largeImage;
             pushButton2.LargeImage = largeImage2;
