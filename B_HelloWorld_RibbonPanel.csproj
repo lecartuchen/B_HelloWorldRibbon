@@ -58,21 +58,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsAddPanel.cs" />
-    <Compile Include="Forms\NewProjForm.cs">
+    <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\NewProjForm.Designer.cs">
+    <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.Designer.cs">
       <DependentUpon>NewProjForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RibbonTab Cmds\NewProj_Cmd.cs" />
-    <Compile Include="RibbonTab Cmds\NewSheet_Cmd.cs" />
+    <Compile Include="RibbonTab Cmds\NewProject\NewProj_Cmd.cs" />
+    <Compile Include="RibbonTab Cmds\NewProject\NewProj_CmdData.cs" />
+    <Compile Include="RibbonTab Cmds\NewSheet\NewSheet_Cmd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="B_HelloWorld_RibbonPanel.addin" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\NewProjForm.resx">
+    <EmbeddedResource Include="RibbonTab Cmds\NewProject\NewProjForm.resx">
       <DependentUpon>NewProjForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

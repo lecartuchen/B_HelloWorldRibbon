@@ -8,13 +8,14 @@
 
     public partial class NewProjForm : Form
     {
-        private UIDocument uidoc;
+        #region Private Members
 
         /// <summary>
         /// The private reference to the <see cref="UIDocument"/>.
         /// </summary>
-        #region Private Members
-        public static object Doc { get; internal set; }
+
+        private UIDocument uidoc = null;
+
         #endregion
 
         #region Constructor

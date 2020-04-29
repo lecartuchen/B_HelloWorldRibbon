@@ -12,8 +12,8 @@ namespace NEWPROJ_CMD
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     public class NewProj_Cmd : IExternalCommand
     {
-        public UIDocument uidoc = null;
-        public UIDocument uIDocument;
+       /* public UIDocument uidoc = null;
+        public UIDocument uIDocument;*/
 
         // private readonly object uidoc;
 
@@ -21,11 +21,10 @@ namespace NEWPROJ_CMD
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData revit,
             ref string message, ElementSet elements)
         {
-            // TaskDialog.Show("Hazen", "Here goes my FIRST Hazen Form");
-            NewProjForm.Doc = uidoc;
+           TaskDialog.Show("Hazen", "Here goes my FIRST Hazen Form");
+           /* NewProjForm.Doc = uidoc;
             NewProjForm FirstForm = new NewProjForm(uIDocument);
-            
-            FirstForm.Show();
+            FirstForm.Show();*/
              return Autodesk.Revit.UI.Result.Succeeded;  
         }
     }
