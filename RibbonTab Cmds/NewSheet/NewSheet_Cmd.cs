@@ -1,9 +1,7 @@
-﻿using Autodesk.Revit.DB;
-using Autodesk.Revit.UI;
-
-
-namespace NEWSHEET_CMD
+﻿namespace B_HelloWorld_RibbonPanel
 {
+    using Autodesk.Revit.DB;
+    using Autodesk.Revit.UI;
     /// <remarks>
     /// The "NewSheet_Cmd" external command. The class must be Public.
     /// </remarks>
