@@ -22,7 +22,7 @@
         /// <summary>
         /// The private text type identifier.
         /// </summary>
-        private ElementId textTypeId = null;
+        private ElementId newSheetNameId = null;
 
         #endregion
 
@@ -74,6 +74,16 @@
             PopulateTextNoteTypeList();
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the CmbBxNewSheet control.
+        /// </summary>
+        /// <param name="sender">The source of the event</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> contaning the event data</param>
+        private void CmbBxNewSheet_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            newSheetNameId = ((KeyValuePair<string, ElementId>)CmbBxNewSheet.SelectedItem).Value;
+        }
+
         #endregion
 
         #region Public Methods
@@ -89,7 +99,8 @@
             {
                 FloorPlan = ChkBxGroundFloor.Checked,
                 RoofPlan = ChkBxRoofPlan.Checked,
-                RCPlan = ChkBxRCPlan.Checked
+                RCPlan = ChkBxRCPlan.Checked,
+                NewSheetName = newSheetNameId
             };
             return information;
         }
@@ -119,13 +130,6 @@
             CmbBxNewSheet.DisplayMember = "Key";
             CmbBxNewSheet.ValueMember = "Value";
         }
-
-
         #endregion
-
-        private void CmbBxNewSheet_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-
-        }
     }
 }
