@@ -23,7 +23,15 @@
             var uidoc = commandData.Application.ActiveUIDocument;
             var doc = uidoc.Document;
 
-            TaskDialog.Show("Hazen", "Here goes my SECOND Hazen Form");
+            // var userInfo = new NewSheet_CmdData();
+
+            using (var window = new NewSheetForm(uidoc))
+            {
+                window.ShowDialog();
+               // userInfo = window.GetInformation();
+            }
+
+            //TaskDialog.Show("Hazen", "Here goes my SECOND Hazen Form");
             return Autodesk.Revit.UI.Result.Succeeded;
         }
         #endregion

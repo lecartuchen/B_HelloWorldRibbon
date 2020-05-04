@@ -37,6 +37,7 @@
         public NewSheetForm(UIDocument uIDocument)
         {
             uidoc = uIDocument;
+            InitializeComponent();
         }
         #endregion
 
