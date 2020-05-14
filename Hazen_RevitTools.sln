@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_HelloWorld_RibbonPanel", "B_HelloWorld_RibbonPanel.csproj", "{550F47B3-771E-4CB3-9AA1-F237E84DE390}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hazen_RibbonPanel", "Hazen_RibbonPanel.csproj", "{550F47B3-771E-4CB3-9AA1-F237E84DE390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

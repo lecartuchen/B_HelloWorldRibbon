@@ -1,9 +1,7 @@
-﻿namespace B_HelloWorld_RibbonPanel
+﻿namespace Hazen_RibbonPanel
 {
-    using System.Text;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
-    using Autodesk.Revit.UI.Selection;
 
     /// <summary>
     /// New Sheet command code to be executed when button is clicked.
@@ -31,7 +29,6 @@
                // userInfo = window.GetInformation();
             }
 
-            //TaskDialog.Show("Hazen", "Here goes my SECOND Hazen Form");
             return Autodesk.Revit.UI.Result.Succeeded;
         }
         #endregion

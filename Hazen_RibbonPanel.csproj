@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationManifest>B_HelloWorld_RibbonPanel.addin</ApplicationManifest>
+    <ApplicationManifest>Hazen_RibbonPanel.addin</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsAddPanel.cs" />
+    <Compile Include="RibbonTab Cmds\NewProject\Commands\CreateNewWall.cs" />
     <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,7 +78,7 @@
     <Compile Include="RibbonTab Cmds\NewSheet\NewSheet_CmdData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="B_HelloWorld_RibbonPanel.addin" />
+    <None Include="Hazen_RibbonPanel.addin" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RibbonTab Cmds\NewProject\NewProjForm.resx">

@@ -1,4 +1,4 @@
-﻿namespace B_HelloWorld_RibbonPanel.Forms
+﻿namespace Hazen_RibbonPanel.Forms
 {
     using System;
     using System.Windows.Forms;

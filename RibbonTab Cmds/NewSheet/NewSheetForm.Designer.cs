@@ -1,4 +1,4 @@
-﻿namespace B_HelloWorld_RibbonPanel
+﻿namespace Hazen_RibbonPanel
 {
     partial class NewSheetForm
     {
@@ -41,7 +41,7 @@
             // 
             // BtnOk
             // 
-            this.BtnOk.Location = new System.Drawing.Point(124, 252);
+            this.BtnOk.Location = new System.Drawing.Point(144, 252);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Size = new System.Drawing.Size(75, 23);
             this.BtnOk.TabIndex = 0;
@@ -52,7 +52,7 @@
             // BtnCancel
             // 
             this.BtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnCancel.Location = new System.Drawing.Point(205, 252);
+            this.BtnCancel.Location = new System.Drawing.Point(225, 252);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 23);
             this.BtnCancel.TabIndex = 1;
@@ -68,26 +68,26 @@
             this.GrpBxSheetList.Controls.Add(this.ChkBxGroundFloor);
             this.GrpBxSheetList.Location = new System.Drawing.Point(12, 12);
             this.GrpBxSheetList.Name = "GrpBxSheetList";
-            this.GrpBxSheetList.Size = new System.Drawing.Size(268, 234);
+            this.GrpBxSheetList.Size = new System.Drawing.Size(288, 234);
             this.GrpBxSheetList.TabIndex = 2;
             this.GrpBxSheetList.TabStop = false;
-            this.GrpBxSheetList.Text = "Sheet List";
+            this.GrpBxSheetList.Text = "Default Options";
             // 
             // LblNewSheet
             // 
             this.LblNewSheet.AutoSize = true;
             this.LblNewSheet.Location = new System.Drawing.Point(15, 170);
             this.LblNewSheet.Name = "LblNewSheet";
-            this.LblNewSheet.Size = new System.Drawing.Size(76, 17);
+            this.LblNewSheet.Size = new System.Drawing.Size(115, 17);
             this.LblNewSheet.TabIndex = 4;
-            this.LblNewSheet.Text = "New Sheet";
+            this.LblNewSheet.Text = "Add a new Sheet";
             // 
             // CmbBxNewSheet
             // 
             this.CmbBxNewSheet.FormattingEnabled = true;
             this.CmbBxNewSheet.Location = new System.Drawing.Point(15, 193);
             this.CmbBxNewSheet.Name = "CmbBxNewSheet";
-            this.CmbBxNewSheet.Size = new System.Drawing.Size(235, 24);
+            this.CmbBxNewSheet.Size = new System.Drawing.Size(258, 24);
             this.CmbBxNewSheet.TabIndex = 3;
             this.CmbBxNewSheet.Text = "Type new sheet";
             this.CmbBxNewSheet.SelectedIndexChanged += new System.EventHandler(this.CmbBxNewSheet_SelectedIndexChanged);
@@ -99,9 +99,9 @@
             this.ChkBxRCPlan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkBxRCPlan.Location = new System.Drawing.Point(15, 115);
             this.ChkBxRCPlan.Name = "ChkBxRCPlan";
-            this.ChkBxRCPlan.Size = new System.Drawing.Size(90, 21);
+            this.ChkBxRCPlan.Size = new System.Drawing.Size(144, 21);
             this.ChkBxRCPlan.TabIndex = 2;
-            this.ChkBxRCPlan.Text = "RCP Plan";
+            this.ChkBxRCPlan.Text = "Building RCP Plan";
             this.ChkBxRCPlan.UseVisualStyleBackColor = true;
             // 
             // ChkBxRoofPlan
@@ -111,9 +111,9 @@
             this.ChkBxRoofPlan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkBxRoofPlan.Location = new System.Drawing.Point(15, 73);
             this.ChkBxRoofPlan.Name = "ChkBxRoofPlan";
-            this.ChkBxRoofPlan.Size = new System.Drawing.Size(92, 21);
+            this.ChkBxRoofPlan.Size = new System.Drawing.Size(146, 21);
             this.ChkBxRoofPlan.TabIndex = 1;
-            this.ChkBxRoofPlan.Text = "Roof Plan";
+            this.ChkBxRoofPlan.Text = "Building Roof Plan";
             this.ChkBxRoofPlan.UseVisualStyleBackColor = true;
             // 
             // ChkBxGroundFloor
@@ -123,9 +123,9 @@
             this.ChkBxGroundFloor.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkBxGroundFloor.Location = new System.Drawing.Point(15, 31);
             this.ChkBxGroundFloor.Name = "ChkBxGroundFloor";
-            this.ChkBxGroundFloor.Size = new System.Drawing.Size(94, 21);
+            this.ChkBxGroundFloor.Size = new System.Drawing.Size(148, 21);
             this.ChkBxGroundFloor.TabIndex = 0;
-            this.ChkBxGroundFloor.Text = "Floor Plan";
+            this.ChkBxGroundFloor.Text = "Building Floor Plan";
             this.ChkBxGroundFloor.UseVisualStyleBackColor = true;
             // 
             // NewSheetForm
@@ -134,12 +134,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BtnCancel;
-            this.ClientSize = new System.Drawing.Size(292, 283);
+            this.ClientSize = new System.Drawing.Size(312, 283);
             this.Controls.Add(this.GrpBxSheetList);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnOk);
+            this.MaximumSize = new System.Drawing.Size(330, 330);
+            this.MinimumSize = new System.Drawing.Size(330, 330);
             this.Name = "NewSheetForm";
-            this.Text = "Sheetlist Settings";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "New Sheet Set";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.NewSheetForm_Load);
             this.GrpBxSheetList.ResumeLayout(false);
             this.GrpBxSheetList.PerformLayout();
