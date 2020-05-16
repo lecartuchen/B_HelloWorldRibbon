@@ -25,7 +25,8 @@ namespace AddPanel
 
             // Create two push buttons
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "NEWPROJ_CMD.NewProj_Cmd");
+            // PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "NEWPROJ_CMD.NewProj_Cmd");
+            PushButtonData button1 = new PushButtonData("newProjBtn", "New Project", thisAssemblyPath, "CommandsCreate.CmdCreateNewWall");
             PushButtonData button2 = new PushButtonData("newShtBtn", "New Sheet", thisAssemblyPath, "Hazen_RibbonPanel.NewSheet_Cmd");
 
             PushButton pushButton1 = m_projectPanel.AddItem(button1) as PushButton;

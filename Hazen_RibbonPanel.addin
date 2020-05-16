@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>HAZEN CORPORATE BIM TOOLS</Name>
-    <Assembly>C:\Users\LESTER\source\repos\lecartuchen\B_HelloWorldRibbon\bin\Debug\Hazen_RibbonPanel.dll</Assembly>
+    <Assembly>C:\Users\LESTER\source\repos\lecartuchen\B_HelloWorldRibbon\bin\Debug\B_HelloWorld_RibbonPanel.dll</Assembly>
     <AddInId>E1A9E9CC-AA68-4BBE-BDE6-E69B32CB4D6F</AddInId>
     <FullClassName>AddPanel.CsAddPanel</FullClassName>
     <Text>Hello World from AddIns Ribbon Button</Text>
