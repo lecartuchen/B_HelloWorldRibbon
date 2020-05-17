@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsAddPanel.cs" />
-    <Compile Include="RibbonTab Cmds\NewProject\CreateNewWall.cs" />
+    <Compile Include="RibbonTab Cmds\NewProject\Commands\NewProj_CmdNewWall.cs" />
     <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +88,6 @@
       <DependentUpon>NewSheetForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RibbonTab Cmds\NewProject\Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
