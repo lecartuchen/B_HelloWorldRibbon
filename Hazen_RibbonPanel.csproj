@@ -58,33 +58,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsAddPanel.cs" />
-    <Compile Include="RibbonTab Cmds\NewProject\Commands\NewProj_CmdNewWall.cs" />
-    <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.cs">
+    <Compile Include="Invoke.cs" />
+    <Compile Include="RibbonTab Cmds\Commands\NewProj_CmdNewWall.cs" />
+    <Compile Include="RibbonTab Cmds\Forms\NewProjForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RibbonTab Cmds\NewProject\NewProjForm.Designer.cs">
+    <Compile Include="RibbonTab Cmds\Forms\NewProjForm.Designer.cs">
       <DependentUpon>NewProjForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RibbonTab Cmds\NewProject\NewProj_Cmd.cs" />
-    <Compile Include="RibbonTab Cmds\NewProject\NewProj_CmdData.cs" />
-    <Compile Include="RibbonTab Cmds\NewSheet\NewSheetForm.cs">
+    <Compile Include="RibbonTab Cmds\Commands\NewProj_Cmd.cs" />
+    <Compile Include="RibbonTab Cmds\DataManagement\NewProj_CmdData.cs" />
+    <Compile Include="RibbonTab Cmds\Forms\NewSheetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RibbonTab Cmds\NewSheet\NewSheetForm.Designer.cs">
+    <Compile Include="RibbonTab Cmds\Forms\NewSheetForm.Designer.cs">
       <DependentUpon>NewSheetForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RibbonTab Cmds\NewSheet\NewSheet_Cmd.cs" />
+    <Compile Include="RibbonTab Cmds\Commands\NewSheet_Cmd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RibbonTab Cmds\NewSheet\NewSheet_CmdData.cs" />
+    <Compile Include="RibbonTab Cmds\DataManagement\NewSheet_CmdData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Hazen_RibbonPanel.addin" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RibbonTab Cmds\NewProject\NewProjForm.resx">
+    <EmbeddedResource Include="RibbonTab Cmds\Forms\NewProjForm.resx">
       <DependentUpon>NewProjForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RibbonTab Cmds\NewSheet\NewSheetForm.resx">
+    <EmbeddedResource Include="RibbonTab Cmds\Forms\NewSheetForm.resx">
       <DependentUpon>NewSheetForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

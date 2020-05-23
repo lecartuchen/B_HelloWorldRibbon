@@ -4,13 +4,14 @@
     using Autodesk.Revit.UI;
 
     /// <summary>
-    /// New Sheet command code to be executed when button is clicked.
+    /// New Project external command code to be executed when button is clicked.
+    /// The class must be Public.
     /// </summary>
-    /// <seealso cref="Autodesk.Revit.UI.IExternalCommand"/>
- 
+    /// <seealso cref="IExternalCommand"/>
+
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class NewSheet_Cmd : IExternalCommand
+    public class NewProj_Cmd : IExternalCommand
     {
         #region Public Methods
 
@@ -19,14 +20,14 @@
         {
             // Application context.
             var uidoc = commandData.Application.ActiveUIDocument;
-            var doc = uidoc.Document;
+            // var doc = uidoc.Document;
 
             // var userInfo = new NewSheet_CmdData();
 
-            using (var window = new NewSheetForm(uidoc))
+            using (var windowProj = new NewProjForm(uidoc))
             {
-                window.ShowDialog();
-               // userInfo = window.GetInformation();
+                windowProj.ShowDialog();
+                // userInfo = window.GetInformation();
             }
 
             return Autodesk.Revit.UI.Result.Succeeded;

@@ -118,13 +118,14 @@ namespace CommandsCreate
             // determines the wall endpoints:
 
             double length = 5 * MeterToFeet;
+            double depth = 8 * MeterToFeet;
 
             XYZ[] pts = new XYZ[4];
 
             pts[0] = XYZ.Zero;
             pts[1] = new XYZ(length, 0, 0);
-            pts[2] = new XYZ(length, length, 0);
-            pts[3] = new XYZ(0, length, 0);
+            pts[2] = new XYZ(length, depth, 0);
+            pts[3] = new XYZ(0, depth, 0);
 
             // determines the levels where 
             // the wall will be located:
@@ -148,16 +149,17 @@ namespace CommandsCreate
             BuiltInParameter topLevelParam = BuiltInParameter.WALL_HEIGHT_TYPE;
 
             ElementId topLevelId = levelTop.Id;
+            ElementId bottomLevelId = levelBottom.Id;
 
             Line lineA = Line.CreateBound(pts[0], pts[1]);
             Line lineB = Line.CreateBound(pts[1], pts[2]);
             Line lineC = Line.CreateBound(pts[2], pts[3]);
             Line lineD = Line.CreateBound(pts[3], pts[0]);
 
-            Wall wallA = Wall.Create(doc, lineA, topLevelId, false);
-            Wall wallB = Wall.Create(doc, lineB, topLevelId, false);
-            Wall wallC = Wall.Create(doc, lineC, topLevelId, false);
-            Wall wallD = Wall.Create(doc, lineD, topLevelId, false);
+            Wall wallA = Wall.Create(doc, lineA, bottomLevelId, false);
+            Wall wallB = Wall.Create(doc, lineB, bottomLevelId, false);
+            Wall wallC = Wall.Create(doc, lineC, bottomLevelId, false);
+            Wall wallD = Wall.Create(doc, lineD, bottomLevelId, false);
 
             Parameter paramA = wallA.get_Parameter(topLevelParam);
             Parameter paramB = wallB.get_Parameter(topLevelParam);
