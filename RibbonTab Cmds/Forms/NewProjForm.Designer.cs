@@ -34,8 +34,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.LblHeight = new System.Windows.Forms.Label();
             this.CBHeight = new System.Windows.Forms.ComboBox();
-            this.LblWidth = new System.Windows.Forms.Label();
-            this.CBWidth = new System.Windows.Forms.ComboBox();
+            this.LblDepth = new System.Windows.Forms.Label();
+            this.CBDepth = new System.Windows.Forms.ComboBox();
             this.LblLength = new System.Windows.Forms.Label();
             this.CBLength = new System.Windows.Forms.ComboBox();
             this.GrpBoxConstType = new System.Windows.Forms.GroupBox();
@@ -70,8 +70,8 @@
             this.GrpBoxBldgDim.Controls.Add(this.btnClear);
             this.GrpBoxBldgDim.Controls.Add(this.LblHeight);
             this.GrpBoxBldgDim.Controls.Add(this.CBHeight);
-            this.GrpBoxBldgDim.Controls.Add(this.LblWidth);
-            this.GrpBoxBldgDim.Controls.Add(this.CBWidth);
+            this.GrpBoxBldgDim.Controls.Add(this.LblDepth);
+            this.GrpBoxBldgDim.Controls.Add(this.CBDepth);
             this.GrpBoxBldgDim.Controls.Add(this.LblLength);
             this.GrpBoxBldgDim.Controls.Add(this.CBLength);
             this.GrpBoxBldgDim.Location = new System.Drawing.Point(15, 276);
@@ -112,24 +112,24 @@
             this.CBHeight.Size = new System.Drawing.Size(160, 24);
             this.CBHeight.TabIndex = 4;
             // 
-            // LblWidth
+            // LblDepth
             // 
-            this.LblWidth.AutoSize = true;
-            this.LblWidth.Location = new System.Drawing.Point(9, 98);
-            this.LblWidth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblWidth.Name = "LblWidth";
-            this.LblWidth.Size = new System.Drawing.Size(44, 17);
-            this.LblWidth.TabIndex = 3;
-            this.LblWidth.Text = "Width";
+            this.LblDepth.AutoSize = true;
+            this.LblDepth.Location = new System.Drawing.Point(9, 98);
+            this.LblDepth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDepth.Name = "LblDepth";
+            this.LblDepth.Size = new System.Drawing.Size(46, 17);
+            this.LblDepth.TabIndex = 3;
+            this.LblDepth.Text = "Depth";
             // 
-            // CBWidth
+            // CBDepth
             // 
-            this.CBWidth.FormattingEnabled = true;
-            this.CBWidth.Location = new System.Drawing.Point(8, 121);
-            this.CBWidth.Margin = new System.Windows.Forms.Padding(4);
-            this.CBWidth.Name = "CBWidth";
-            this.CBWidth.Size = new System.Drawing.Size(160, 24);
-            this.CBWidth.TabIndex = 2;
+            this.CBDepth.FormattingEnabled = true;
+            this.CBDepth.Location = new System.Drawing.Point(8, 121);
+            this.CBDepth.Margin = new System.Windows.Forms.Padding(4);
+            this.CBDepth.Name = "CBDepth";
+            this.CBDepth.Size = new System.Drawing.Size(160, 24);
+            this.CBDepth.TabIndex = 2;
             // 
             // LblLength
             // 
@@ -202,8 +202,8 @@
         private System.Windows.Forms.GroupBox GrpBoxBldgDim;
         private System.Windows.Forms.Label LblHeight;
         private System.Windows.Forms.ComboBox CBHeight;
-        private System.Windows.Forms.Label LblWidth;
-        private System.Windows.Forms.ComboBox CBWidth;
+        private System.Windows.Forms.Label LblDepth;
+        private System.Windows.Forms.ComboBox CBDepth;
         private System.Windows.Forms.Label LblLength;
         private System.Windows.Forms.ComboBox CBLength;
         private System.Windows.Forms.GroupBox GrpBoxConstType;

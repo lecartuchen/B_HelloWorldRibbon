@@ -19,7 +19,7 @@
 
         public double CBLength { get; set; }
 
-        public double CBWidth { get; set; }
+        public double CBDepth { get; set; }
 
         public double CBHeight { get; set; }
 

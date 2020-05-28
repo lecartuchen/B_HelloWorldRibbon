@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using Autodesk.Revit.UI;
     using Autodesk.Revit.DB;
+    using CommandsCreate;
 
 
     /// <summary>
@@ -20,6 +21,10 @@
         /// </summary>
 
         private UIDocument uidoc = null;
+
+        private double length = 5.00;
+        private double depth = 5.00;
+        private double height = 5.00;
 
         #endregion
 
@@ -44,6 +49,7 @@
         /// </summary>
         /// <param name="sender">The source of the event</param>
         /// <param name="e">The see <see cref="System.EventArgs"/> instance containing the event data</param>
+
         private void BtnOk_Click(object sender, System.EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
@@ -85,10 +91,10 @@
         {
             var information = new NewProj_CmdData()
             {
-               /* length = CBLength,
-                RoofPlan = ChkBxRoofPlan.Checked,
-                RCPlan = ChkBxRCPlan.Checked,
-                NewSheetName = newSheetNameId*/
+               /*length = CBLength.Text,
+               depth = CBDepth.Text,
+               height = CBHeight.Text*/
+
             };
             return information;
         }

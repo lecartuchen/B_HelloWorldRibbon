@@ -20,14 +20,14 @@
         {
             // Application context.
             var uidoc = commandData.Application.ActiveUIDocument;
-            // var doc = uidoc.Document;
+            var doc = uidoc.Document;
 
-            // var userInfo = new NewSheet_CmdData();
+            var userInfo = new NewProj_CmdData();
 
             using (var windowProj = new NewProjForm(uidoc))
             {
                 windowProj.ShowDialog();
-                // userInfo = window.GetInformation();
+                userInfo = windowProj.GetInformation();
             }
 
             return Autodesk.Revit.UI.Result.Succeeded;
