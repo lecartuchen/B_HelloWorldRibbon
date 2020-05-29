@@ -33,7 +33,6 @@
         /// </summary>
         public NewProj_CmdData()
         {
-
         }
 
         #endregion

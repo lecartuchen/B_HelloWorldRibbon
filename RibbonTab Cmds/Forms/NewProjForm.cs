@@ -52,8 +52,10 @@
 
         private void BtnOk_Click(object sender, System.EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
-            Close();
+            /*this.DialogResult = DialogResult.OK;
+            Close();*/
+            CommandsCreate.CmdCreateNewWall nw = CommandsCreate.CmdCreateNewWall(uidoc);
+            nw();
         }
 
         /// <summary>
