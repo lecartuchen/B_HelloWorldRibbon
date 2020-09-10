@@ -54,8 +54,8 @@
         {
             /*this.DialogResult = DialogResult.OK;
             Close();*/
-            CommandsCreate.CmdCreateNewWall nw = CommandsCreate.CmdCreateNewWall(uidoc);
-            nw();
+            CommandsCreate.CmdCreateNewWall nw = new CommandsCreate.CmdCreateNewWall();
+            nw.Execute();
         }
 
         /// <summary>
