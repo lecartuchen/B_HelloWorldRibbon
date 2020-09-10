@@ -55,7 +55,7 @@
             /*this.DialogResult = DialogResult.OK;
             Close();*/
             CommandsCreate.CmdCreateNewWall nw = new CommandsCreate.CmdCreateNewWall();
-            nw.Execute();
+            // nw.Execute();
         }
 
         /// <summary>
